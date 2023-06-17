@@ -67,11 +67,15 @@
 	</div>
 </div>
 
-<audio controls autoplay style="display:none;">
+<audio controls id="myAudio" style="display:none;">
 	<source src="./asset/audio/keshi-alright.mp3" type="audio/mpeg">
 	Your browser does not support the audio element.
 </audio>
 <script>window.jQuery || document.write('<script src="asset/js/jquery-1.10.2.min.js"><\/script>')</script>
+<script>
+	var x = document.getElementById("myAudio");
+	x.play();
+	</script>
 <script src="asset/js/jquery.flexslider.js"></script>
 <script src="asset/js/init.js"></script>
 </body>
